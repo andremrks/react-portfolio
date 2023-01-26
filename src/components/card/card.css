@@ -1,0 +1,38 @@
+.card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.card i {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+.card h5 {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.card small {
+  color: var(--color-light);
+  font-size: 0.7rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 55%;
+  }
+}
