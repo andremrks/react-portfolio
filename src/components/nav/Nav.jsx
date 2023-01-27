@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiMessageSquareDetail, BiBook } from "react-icons/bi";
-import { MdMiscellaneousServices } from "react-icons/md";
+import { BiMessageSquareDetail, BiBook, BiCodeAlt } from "react-icons/bi";
 import "./nav.css";
 
 const Nav = () => {
@@ -29,14 +28,14 @@ const Nav = () => {
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
-        <BiBook />
+        <BiCodeAlt />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <MdMiscellaneousServices />
+        <BiBook />
       </a>
       <a
         href="#contact"
