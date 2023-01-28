@@ -35,21 +35,21 @@ const Portfolio = () => {
         <PortfolioCard
           image={Hoobank}
           projectName="Hoobank"
-          techs="HTML | Tailwind CSS | React"
+          techs="Tailwind CSS | React"
           gitHubLink="https://github.com/andremrks/hoobank"
           projectLink="https://andremrks.github.io/hoobank/"
         />
         <PortfolioCard
           image={GPT3}
           projectName="GPT-3"
-          techs="HTML | CSS | React"
+          techs="CSS | React"
           gitHubLink="https://github.com/andremrks/gpt3"
           projectLink="https://andremrks.github.io/gpt3/"
         />
         <PortfolioCard
           image={Movieland}
           projectName="Movieland"
-          techs="HTML | CSS | React"
+          techs="CSS | React"
           gitHubLink="https://github.com/andremrks/movieland"
           projectLink="https://andremrks.github.io/movieland/"
         />
@@ -70,14 +70,14 @@ const Portfolio = () => {
         <PortfolioCard
           image={Calculador}
           projectName="React Calculator"
-          techs="HTML | CSS | React"
+          techs="CSS | React"
           gitHubLink="https://github.com/andremrks/calculadora"
           projectLink="https://andremrks.github.io/calculadora/"
         />
         <PortfolioCard
           image={DIO}
           projectName="DIO - Clone"
-          techs="HTML | CSS | React"
+          techs="CSS | React"
           gitHubLink="https://github.com/andremrks/dio-clone"
           projectLink="https://andremrks.github.io/dio-clone/"
         />

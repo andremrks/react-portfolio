@@ -4,36 +4,86 @@
   gap: 2.5rem;
 }
 
-.portfolio__items {
-  background: var(--color-bg-variant);
-  padding: 1.2rem;
+.portfolio__card {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
   border-radius: 2rem;
-  border: 1px solid transparent;
   transition: var(--transition);
 }
 
-.portfolio__items:hover {
-  background: transparent;
-  border: 1px solid var(--color-primary-variant);
-}
-
-.portfolio__item-image {
-  overflow: hidden;
-  border-radius: 1.5rem;
-}
-
-.portfolio__items h3 {
-  margin-top: 0.5rem;
-}
-
-.portfolio__items p {
-  color: var(--color-light);
-  font-size: 0.9rem;
-  margin: 0;
-  margin-bottom: 1.2rem;
-}
-
+.portfolio__project,
 .portfolio__item-cta {
-  display: flex;
-  gap: 1rem;
+  background: var(--color-card);
+}
+
+.portfolio__card:hover .portfolio__project,
+.portfolio__card:hover .portfolio__item-cta {
+  left: 0;
+}
+
+.portfolio__card:hover img {
+  opacity: 0.8;
+  filter: grayscale(0.6);
+  transition: var(--transition);
+}
+
+.portfolio__card img {
+  width: 100%;
+  height: 250px;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.portfolio__project {
+  padding-top: 0.2rem;
+  height: 70px;
+  width: 400px;
+  position: absolute;
+  bottom: 80px;
+  left: -450px;
+  transition: var(--transition);
+  background: var(--color-bg-variant);
+  border-top-right-radius: 2rem;
+}
+
+.portfolio__project h3 {
+  padding-left: 10px;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.portfolio__project p {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  color: var(--color-light);
+  transition: var(--transition);
+}
+
+.portfolio__project .portfolio__item-cta {
+  background: var(--color-bg-variant);
+  padding-bottom: 2rem;
+  padding-left: 10px;
+  padding-top: 0.8rem;
+  margin-left: 0;
+}
+
+.portfolio__project .portfolio__item-cta a:nth-child(1) {
+  margin-right: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

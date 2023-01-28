@@ -9,24 +9,31 @@ const PortfolioCard = ({
 }) => {
   return (
     <div>
-      <article className="portfolio__items">
+      <article className="portfolio__card">
         <div className="portfolio__item-image">
           <img src={image} alt="Project" />
         </div>
-        <h3>{projectName}</h3>
-        <p>{techs}</p>
-        <div className="portfolio__item-cta">
-          <a href={gitHubLink} className="btn" target="_blank" rel="noreferrer">
-            Repository
-          </a>
-          <a
-            href={projectLink}
-            className="btn btn-primary"
-            target="_blank"
-            rel="noreferrer"
-          >
-            The Page
-          </a>
+        <div className="portfolio__project">
+          <h3>{projectName}</h3>
+          <p>{techs}</p>
+          <div className="portfolio__item-cta">
+            <a
+              href={gitHubLink}
+              className="btn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Repository
+            </a>
+            <a
+              href={projectLink}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              The Page
+            </a>
+          </div>
         </div>
       </article>
     </div>
