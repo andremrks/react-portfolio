@@ -31,18 +31,11 @@ const About = () => {
               title={"Projects"}
               text={"15+ Personal Projects"}
             />
-            <a
-              href="https://drive.google.com/file/d/11kznEOvekoCUeSINQeq3PvjdHrD4da3m/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <Card
-                icon={<GiGraduateCap />}
-                title={"Education"}
-                text={`Front-end Development (DIO)`}
-              />
-            </a>
+            <Card
+              icon={<GiGraduateCap />}
+              title={"Education"}
+              text={`Front-end Development (DIO)`}
+            />
           </div>
           <p>
             I'm just a guy who loves tecnology and dreams a lot, and one of my
