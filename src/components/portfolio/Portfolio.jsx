@@ -33,23 +33,15 @@ const Portfolio = () => {
       <h5>See My Work</h5>
       <h2>Portfolio</h2>
 
+      <h2 className="portfolio__projects-react">React Projects</h2>
       <Swiper
         className="container portfolio__container"
         // install Swiper modules
         modules={[Pagination]}
         spaceBetween={80}
-        slidesPerView={2}
+        slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        <SwiperSlide>
-          <PortfolioCard
-            image={Sara}
-            projectName="Sara Store"
-            techs="HTML | CSS | JavaScript"
-            gitHubLink="https://github.com/andremrks/sara"
-            projectLink="https://andremrks.github.io/sara/"
-          />
-        </SwiperSlide>
         <SwiperSlide>
           <PortfolioCard
             image={Hoobank}
@@ -79,24 +71,6 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <PortfolioCard
-            image={Mustache}
-            projectName="Mustache Barbershop"
-            techs="HTML | Bootstrap"
-            gitHubLink="https://github.com/andremrks/mustache-barbershop"
-            projectLink="https://andremrks.github.io/mustache-barbershop/"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PortfolioCard
-            image={Spiderverse}
-            projectName="Spiderverse"
-            techs="HTML | CSS | JavaScript"
-            gitHubLink="https://github.com/andremrks/spiderverse"
-            projectLink="https://andremrks.github.io/spiderverse/"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PortfolioCard
             image={Calculador}
             projectName="React Calculator"
             techs="CSS | React"
@@ -111,6 +85,44 @@ const Portfolio = () => {
             techs="CSS | React"
             gitHubLink="https://github.com/andremrks/dio-clone"
             projectLink="https://andremrks.github.io/dio-clone/"
+          />
+        </SwiperSlide>
+      </Swiper>
+
+      <h2 className="portfolio__projects-noReact">Projects Without React</h2>
+      <Swiper
+        className="container portfolio__container"
+        // install Swiper modules
+        modules={[Pagination]}
+        spaceBetween={80}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
+        <SwiperSlide>
+          <PortfolioCard
+            image={Sara}
+            projectName="Sara Store"
+            techs="HTML | CSS | JavaScript"
+            gitHubLink="https://github.com/andremrks/sara"
+            projectLink="https://andremrks.github.io/sara/"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <PortfolioCard
+            image={Mustache}
+            projectName="Mustache Barbershop"
+            techs="HTML | Bootstrap"
+            gitHubLink="https://github.com/andremrks/mustache-barbershop"
+            projectLink="https://andremrks.github.io/mustache-barbershop/"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <PortfolioCard
+            image={Spiderverse}
+            projectName="Spiderverse"
+            techs="HTML | CSS | JavaScript"
+            gitHubLink="https://github.com/andremrks/spiderverse"
+            projectLink="https://andremrks.github.io/spiderverse/"
           />
         </SwiperSlide>
         <SwiperSlide>

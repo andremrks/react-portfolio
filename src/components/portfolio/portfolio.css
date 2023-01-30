@@ -9,7 +9,16 @@
 }
 
 .container.portfolio__container {
+  width: 40%;
   padding-bottom: 3.5rem;
+}
+
+.portfolio__projects-react, .portfolio__projects-noReact {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio__projects-noReact {
+  margin-top: 1.5rem;
 }
 
 .portfolio__card {
@@ -89,6 +98,11 @@
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
+  .container.portfolio__container
+  {
+    width: var(--container-width-md);
+  }
+
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
@@ -96,6 +110,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container.portfolio__container
+  {
+    width: var(--container-width-sm);
+  }
+
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
