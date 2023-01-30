@@ -1,5 +1,5 @@
 .card {
-  background: var(--color-bg-variant);
+  background: var(--color-bg-variant2);
   border: 1px solid transparent;
   border-radius: 1rem;
   text-align: center;
@@ -10,7 +10,6 @@
 .card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
 }
 
 .card i {

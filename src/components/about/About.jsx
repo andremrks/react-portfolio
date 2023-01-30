@@ -3,7 +3,7 @@ import MeAbout from "../../assets/me-about2.png";
 import Card from "../card/Card";
 import { FiAward } from "react-icons/fi";
 import { FaLaptopCode } from "react-icons/fa";
-import { SlPeople } from "react-icons/sl";
+import { GiGraduateCap } from "react-icons/gi";
 import "./about.css";
 
 const About = () => {
@@ -24,18 +24,25 @@ const About = () => {
             <Card
               icon={<FiAward />}
               title={"Experience"}
-              text={"1 Year Working"}
-            />
-            <Card
-              icon={<SlPeople />}
-              title={"Clients"}
-              text={"Currently in a Job"}
+              text={"1 Year Developing"}
             />
             <Card
               icon={<FaLaptopCode />}
               title={"Projects"}
-              text={"15+ Completed"}
+              text={"15+ Personal Projects"}
             />
+            <a
+              href="https://drive.google.com/file/d/11kznEOvekoCUeSINQeq3PvjdHrD4da3m/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <Card
+                icon={<GiGraduateCap />}
+                title={"Education"}
+                text={`Front-end Development (DIO)`}
+              />
+            </a>
           </div>
           <p>
             I'm just a guy who loves tecnology and dreams a lot, and one of my

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -9,15 +10,18 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-bg-profile: rgba(44, 44, 108, 0.35);
-  --color-primary: #4db5ff;
-  --color-bg-profile-variant: rgba(77, 181, 255, 0.35);
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-bg: #0e141b;
+  --color-bg-variant: #0a192f;
+  --color-bg-variant2: rgba(10, 25, 47, 0.6);
+  --color-bg-profile: rgba(10, 25, 47, 0.35);
+  --color-primary: #0ae8c6;
+  --color-titles: #dee898;
+  --color-bg-profile-variant: rgba(43, 69, 85, 0.4);
+  --color-primary-variant: rgba(43, 69, 85, 0.35);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -38,7 +42,6 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  /*background-image: url(./assets/bg-texture.png);*/
 }
 
 .container {

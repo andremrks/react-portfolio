@@ -1,7 +1,15 @@
+#portfolio h2 {
+  color: var(--color-titles);
+}
+
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+}
+
+.container.portfolio__container {
+  padding-bottom: 3.5rem;
 }
 
 .portfolio__card {
@@ -50,7 +58,7 @@
 .portfolio__project h3 {
   padding-left: 10px;
   font-size: 1.5rem;
-  color: var(--color-primary);
+  color: var(--color-titles);
 }
 
 .portfolio__project p {
@@ -70,6 +78,12 @@
 
 .portfolio__project .portfolio__item-cta a:nth-child(1) {
   margin-right: 1rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--color-primary);
 }
 
 /* Media Queries */

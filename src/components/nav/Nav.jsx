@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiMessageSquareDetail, BiBook, BiCodeAlt } from "react-icons/bi";
 import "./nav.css";
