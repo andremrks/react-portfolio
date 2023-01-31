@@ -6,6 +6,7 @@ export { default as Hoobank } from "./portfolio/hoobank.jpg";
 export { default as Lesaloon } from "./portfolio/lesaloon.jpg";
 export { default as Movieland } from "./portfolio/movieland.jpg";
 export { default as Mustache } from "./portfolio/mustache.jpg";
+export { default as newPortfolio } from "./portfolio/portfolioNew.jpg";
 export { default as PortfoliOld } from "./portfolio/pagina-portfolio.png";
 export { default as Premium } from "./portfolio/premium-coffee.png";
 export { default as Sara } from "./portfolio/sara.jpg";

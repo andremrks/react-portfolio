@@ -15,6 +15,7 @@ import {
   Social,
   Spiderverse,
   Tasty,
+  newPortfolio,
 } from "../../assets";
 import "./portfolio.css";
 
@@ -85,6 +86,15 @@ const Portfolio = () => {
             techs="CSS | React"
             gitHubLink="https://github.com/andremrks/dio-clone"
             projectLink="https://andremrks.github.io/dio-clone/"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <PortfolioCard
+            image={newPortfolio}
+            projectName="This Portfolio Page"
+            techs="CSS | React"
+            gitHubLink="https://github.com/andremrks/react-portfolio"
+            projectLink="https://andremrks.github.io/react-portfolio/"
           />
         </SwiperSlide>
       </Swiper>
