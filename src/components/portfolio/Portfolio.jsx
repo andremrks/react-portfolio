@@ -33,7 +33,7 @@ const Portfolio = () => {
       <h5>See My Work</h5>
       <h2>Portfolio</h2>
 
-      <h2 className="portfolio__projects-react">React Projects</h2>
+      <h2 className="portfolio__projects-react">React</h2>
       <Swiper
         className="container portfolio__container"
         // install Swiper modules
@@ -89,10 +89,9 @@ const Portfolio = () => {
         </SwiperSlide>
       </Swiper>
 
-      <h2 className="portfolio__projects-noReact">Projects Without React</h2>
+      <h2 className="portfolio__projects-noReact">HTML | CSS | JavaScript</h2>
       <Swiper
         className="container portfolio__container"
-        // install Swiper modules
         modules={[Pagination]}
         spaceBetween={80}
         slidesPerView={1}
