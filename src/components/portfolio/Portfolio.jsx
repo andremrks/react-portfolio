@@ -32,7 +32,7 @@ import "swiper/css/pagination";
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <Fade left>
+      <Fade left cascade>
         <h5>See My Work</h5>
         <h2>Portfolio</h2>
 

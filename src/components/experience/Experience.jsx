@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiJavascript1 } from "react-icons/di";
 import { SiBootstrap, SiTailwindcss, SiReact } from "react-icons/si";
@@ -8,7 +8,7 @@ import "./experience.css";
 const Experience = () => {
   return (
     <section id="experience">
-      <Fade bottom>
+      <Zoom cascade>
         <h5>These Are My Skills</h5>
         <h2>My Experience</h2>
 
@@ -61,7 +61,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </Fade>
+      </Zoom>
     </section>
   );
 };

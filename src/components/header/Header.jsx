@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 import CTA from "./CTA.jsx";
 import ME from "../../assets/me2.png";
 import HeaderSocials from "./HeaderSocials.jsx";
@@ -8,10 +9,12 @@ const Header = () => {
   return (
     <header id="home">
       <div className="container header__container">
-        <h5>Hi! I'm</h5>
-        <h1>André Marques</h1>
-        <h5 className="text-ligth">Front-end Developer</h5>
-        <CTA />
+        <Zoom cascade>
+          <h5>Hi! I'm</h5>
+          <h1>André Marques</h1>
+          <h5 className="text-ligth">Front-end Developer</h5>
+          <CTA />
+        </Zoom>
 
         <div className="me">
           <img src={ME} alt="Me" />
