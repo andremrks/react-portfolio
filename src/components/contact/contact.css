@@ -55,29 +55,39 @@
 #sentmessage {
   transition: var(--transition);
   display: none;
+  box-shadow: 3px 3px 20px var(--color-bg);
+}
+
+#sentmessage small {
+  color: var(--color-light);
+}
+
+#sentmessage button {
+  margin: 1rem 0;
+  padding: .5rem 1.2rem;
+  font-size: .9rem;
 }
 
 #sentmessage.active {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  font-size: 1.2rem;
+  position: absolute;
   text-align: center;
-  width: 300px;
-  height: 200px;
-  background: var(--color-bg-variant2);
+  width: 250px;
+  height: 250px;
+  background: var(--color-bg-variant);
   color: var(--color-primary);
   border-radius: 1rem;
-  bottom: 50%;
-  left: calc(50% - 9.5rem);
+  top: 0;
+  left: 0;
   transition: var(--transition);
 }
 
-.sentMessageIcon {
-  transition: var(--transition);
-  display: none;
-  font-size: 1.5rem;
+.sentMessage__icon {
+  color: var(--color-titles);
+  font-size: 5rem;
 }
 
 .sentMessageIcon.active {
