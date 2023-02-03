@@ -13,8 +13,8 @@ const Header = () => {
           <h5>Hi! I'm</h5>
           <h1>André Marques</h1>
           <h5 className="text-ligth">Front-end Developer</h5>
-          <CTA />
         </Zoom>
+          <CTA />
 
         <div className="me">
           <img src={ME} alt="Me" />
