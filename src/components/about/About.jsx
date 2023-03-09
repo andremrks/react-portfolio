@@ -47,8 +47,13 @@ const About = () => {
               Since June 2022 I'm working developing applications as It
               Consultant, but I'm just starting!
             </p>
-            <a href="#contact" className="btn btn-primary">
-              Contact Me
+            <a href="#contact">
+            <button class="button">
+          <span class="button_lg">
+            <span class="button_sl"></span>
+            <span class="button_text">Contact Me</span>
+          </span>
+        </button>
             </a>
           </div>
         </div>

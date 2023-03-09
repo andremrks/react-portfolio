@@ -1,34 +1,40 @@
-import React, { useRef } from "react";
+import { useState } from "react";
 import Fade from "react-reveal/Fade";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Card from "../card/Card";
 import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
-import { BsWhatsapp, BsPatchCheck } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import "./contact.css";
 
+const Result = () => {
+  return (
+    <p>Thanks for your message, I'll contact you soon :)</p>
+  );
+};
+
 const Contact = () => {
-  const form = useRef();
+  const [result, showResult] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_3kyyorn",
-      "template_fe8v7me",
-      form.current,
-      "RIRBoiRM5_u4twJKk"
-    );
-    const sentmessage = document.querySelector("#sentmessage");
-    const closeMessage = document.querySelector(".closeBtn");
-    sentmessage.classList.add("active");
-    closeMessage.classList.add("active");
+    emailjs
+      .sendForm(
+        "service_8h469hb",
+        "template_8ai7gx8",
+        e.target,
+        "RIRBoiRM5_u4twJKk"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.target.reset();
-  };
-
-  const closeMessage = () => {
-    const sentmessage = document.querySelector("#sentmessage");
-    const closeMessage = document.querySelector(".closeBtn");
-    sentmessage.classList.remove("active");
-    closeMessage.classList.remove("active");
+    showResult(true);
   };
   return (
     <section id="contact">
@@ -74,41 +80,66 @@ const Contact = () => {
             </article>
           </div>
           <Fade bottom>
-            <form ref={form} className="contact__form" onSubmit={sendEmail}>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-              <textarea
-                name="message"
-                rows="10"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <div id="sentmessage">
-                <div className="sentMessage__icon">
-                  <BsPatchCheck />
-                </div>
-                <p>Thanks for your message!</p>
-                <small>I'll answer ASAP :)</small>
-                <button
-                  className="btn btn-primary closeBtn"
-                  onClick={closeMessage}
-                >
-                  Close
-                </button>
+            <form className="contact__form" onSubmit={sendEmail}>
+              <div class="form__group field">
+                <input
+                  id="name"
+                  required
+                  placeholder="Name"
+                  name="name"
+                  class="form__field"
+                  type="input"
+                />
+                <label class="form__label" for="name">
+                  Name
+                </label>
               </div>
-              <button type="submit" className="btn btn-primary">
-                Send
+              <div class="form__group field">
+                <input
+                  id="email"
+                  required
+                  placeholder="Email"
+                  name="email"
+                  class="form__field"
+                  type="email"
+                />
+                <label class="form__label" for="email">
+                  Email
+                </label>
+              </div>
+              <div class="form__group field">
+                <input
+                  id="subject"
+                  required
+                  placeholder="Subject"
+                  name="subject"
+                  class="form__field"
+                  type="input"
+                />
+                <label class="form__label" for="subject">
+                  Subject
+                </label>
+              </div>
+              <div class="form__group field">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="10"
+                  placeholder="Your Message"
+                  required
+                  class="form__field"
+                  style={{ width: "100%", height: "135px" }}
+                ></textarea>
+                <label class="form__label" for="message">
+                  Your Message
+                </label>
+              </div>
+              <div className="sentMessage">{result ? <Result /> : null}</div>
+              <button type="submit" class="button btn-send">
+                <span class="button_lg">
+                  <span class="button_sl"></span>
+                  <span class="button_text">Send</span>
+                </span>
               </button>
             </form>
           </Fade>
